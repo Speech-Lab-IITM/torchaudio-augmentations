@@ -4,6 +4,8 @@
 [![Downloads](https://pepy.tech/badge/torchaudio-augmentations)](https://pepy.tech/project/torchaudio-augmentations)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4748582.svg)](https://zenodo.org/record/4748582#)
 
+**NOTE:** A few augmentations have been added and modified in this repository to facilitate the working of [ccc-wav2vec 2.0](https://arxiv.org/abs/2210.02592). The citation to the original repository can be found at the end of this readme.
+
 Audio data augmentations library for PyTorch for audio in the time-domain. The focus of this repository is to:
 - Provide many audio transformations in an easy Python interface.
 - Have a high test coverage.

@@ -14,9 +14,10 @@ class Noise(torch.nn.Module):
         self.max_snr = max_snr
 
     def forward(self, audio):
-        std = torch.std(audio)
+        std = torch.std(audio) # std deviation of the values in the audio tensor
         noise_std = random.uniform(self.min_snr * std, self.max_snr * std)
 
-        noise = np.random.normal(0.0, noise_std, size=audio.shape).astype(np.float32)
+        # noise = np.random.normal(0.0, noise_std, size=audio.shape).astype(np.float32)
+        noise = torch.normal(0.0, noise_std, size=audio.shape)
 
         return audio + noise

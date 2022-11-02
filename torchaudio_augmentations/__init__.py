@@ -10,3 +10,6 @@ from .augmentations.polarity_inversion import PolarityInversion
 from .augmentations.random_resized_crop import RandomResizedCrop
 from .augmentations.reverb import Reverb
 from .augmentations.reverse import Reverse
+from .augmentations.randomspeedchange import RandomSpeedChange
+from .augmentations.add_background_noise import RandomBackgroundNoise
+
